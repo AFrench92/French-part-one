@@ -1,0 +1,123 @@
+body{
+    font-family: Roboto;
+    margin: 0;
+}
+.header-parent{
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+}
+h1{
+    color: #20a8b4;
+    display: inline-block;
+    margin: 0;
+    padding: 0px 12px;
+    white-space: nowrap; 
+}
+.orange-text{
+    color: #ff5c0f;
+}
+ul{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 12px 0;
+}
+.navlink{
+    margin: 6px 12px;
+    font-weight: bold;
+    display: inline-block;
+    white-space: nowrap;    
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    color: #ff5c0f;
+}
+a.button1{
+    display: block;
+    text-align: center;
+    color: #fff;
+    background-color: #20a8b4;
+    white-space: nowrap; 
+    padding: 12px;
+    border-radius: 10px;
+    margin: 6px 12px;
+}
+a.button1:hover{
+    background-color: #ff5c0f;
+}
+.desktop-parent{
+    display: flex;
+    flex-direction: column;
+    padding: 15% 0 ;
+    flex-wrap: nowrap;
+    float: left;
+}
+h2{
+    color: #000;
+    display: inline-block;
+    margin: 12px 0;
+    padding: 0px 12px;
+    white-space: nowrap; 
+}
+.body-text{
+    margin: 6px 12px 12px 12px;
+    display: inline-block;
+    font-weight: bold;
+    white-space: nowrap;    
+}
+a.button2{
+    display: block;
+    text-align: center;
+    color: #fff;
+    background-color: #20a8b4;
+    width: 100%;
+    white-space: nowrap; 
+    padding: 12px;
+    border-radius: 10px;
+    margin: 6px 12px;
+}
+a.button2:hover{
+    background-color: #ff5c0f;
+}
+.code-img{
+    width: 30%;
+    height: 30%;
+    display: none;
+}
+@media screen and (min-width: 768px) {
+    .header-parent{
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .push{
+        margin-left: auto;
+    }
+    .desktop-parent{
+        display: flex;
+        flex-direction: column;
+        padding: 15% 0 ;
+        flex-wrap: nowrap;
+        float: left;
+    }
+    .code-img{
+        display: block;
+        float: right;
+        padding: 8%;
+    }
+    a.button2{
+        display: inline-block;
+        text-align: center;
+        color: #fff;
+        background-color: #20a8b4;
+        width: fit-content;
+        white-space: nowrap; 
+        padding: 12px;
+        border-radius: 10px;
+        margin: 6px 12px;
+    }
+}
